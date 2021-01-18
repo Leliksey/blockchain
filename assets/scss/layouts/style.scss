@@ -1,0 +1,10 @@
+
+$body-color: red;
+
+body {
+  color: $body-color;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
