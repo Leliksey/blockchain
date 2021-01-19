@@ -3,7 +3,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HandlebarsPlugin = require("handlebars-webpack-plugin")
 const Handlebars = require("handlebars")
-// var HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   entry: {
@@ -39,6 +39,20 @@ module.exports = {
     filename: 'js/[name].js',
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        "./assets/data/browserconfig.xml",
+        "./assets/data/manifest.json",
+        { 
+          from: './assets/data/browserconfig.xml',
+          to: "browserconfig.xml"
+        },
+        { 
+          from: './assets/data/manifest.json',
+          to: "manifest.json"
+        },
+      ],   
+    }),
     new BrowserSyncPlugin({
       files: ["build/css/app.css", "build/index.html", "build/js/app.js" ],
       host: 'localhost',
@@ -56,9 +70,6 @@ module.exports = {
         path.join(process.cwd(), "assets", "templates", "*", "*.hbs")
       ],
     }),
-    // new HtmlWebpackPlugin({
-    //   template: ' assets/build/"[name].html" '
-    // })
   ],
   mode: process.env.NODE_ENV,
 }
