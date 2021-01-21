@@ -2,7 +2,7 @@ const path = require('path')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HandlebarsPlugin = require("handlebars-webpack-plugin")
-const Handlebars = require("handlebars")
+// const Handlebars = require("handlebars")
 const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
@@ -31,7 +31,17 @@ module.exports = {
       {
         test: /\.css$/,
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
-    }
+      },
+      {
+        test: /\.otf$/,
+        use: {
+          loader: 'url-loader',
+        },
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/,
+        type: 'asset',
+      },
     ]
   },
   output: {
@@ -43,6 +53,10 @@ module.exports = {
       patterns: [
         "./assets/data/browserconfig.xml",
         "./assets/data/manifest.json",
+        {
+          from: './assets/images',
+          to: './images'
+      },
         { 
           from: './assets/data/browserconfig.xml',
           to: "browserconfig.xml"
@@ -57,10 +71,10 @@ module.exports = {
       files: ["build/css/app.css", "build/index.html", "build/js/app.js" ],
       host: 'localhost',
       port: 3000,
-      server: { baseDir: ['build'] }
+      server: { baseDir: ['./build'] }
     }),
     new MiniCssExtractPlugin({
-      filename: "css/[name].css"
+      filename: "/css/[name].css"
     }),
     new HandlebarsPlugin({
       entry: path.join(process.cwd(), "assets", "templates", "*.hbs"),

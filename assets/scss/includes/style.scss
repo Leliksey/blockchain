@@ -1,10 +1,11 @@
 
-$body-color: red;
+$body-color: rgb(217, 212, 233);
 
 body {
   color: $body-color;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  grid-template-columns: 1fr;
 }
