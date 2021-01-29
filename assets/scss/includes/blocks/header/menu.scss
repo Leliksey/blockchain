@@ -1,0 +1,14 @@
+.menu {
+    &__item { 
+        margin-right: 30px;
+    }
+    &__link {
+        color: $wetasphalt;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+    &__arrow {
+        margin-left: 6px;
+    }
+}

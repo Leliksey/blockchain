@@ -1,0 +1,13 @@
+.logos {
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 30px;
+        align-items: center;
+        margin: 0 auto;
+        &__logo {
+            padding: 30px 68px;
+        }
+    }
+}

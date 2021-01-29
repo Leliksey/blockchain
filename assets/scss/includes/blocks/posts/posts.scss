@@ -1,0 +1,19 @@
+.posts {
+    background-color: $lynx-white;
+    &__group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 55px;
+        padding-top: 50px;
+        align-items: flex-start;  
+    }
+    &__post {
+        border-radius: 5px;
+        background-color: $white;
+        box-shadow: 1px 1px 17px 5px;
+        &_active {
+            background-color: $brand-primary;
+            box-shadow: 1px 1px 14px 8px;
+        }
+    }
+}

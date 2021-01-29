@@ -1,0 +1,26 @@
+.inputs {
+    &-group {
+        max-width: 660px; 
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        &__input {
+            border: 1px solid $gainsboro;
+        }
+    }
+    &-flex {
+        display: flex;
+        position: relative;
+        &__select {
+            position: relative;
+            display: inline-block;
+        }
+        &__arrow {
+            position: absolute;
+            bottom: 0;
+            left: 80px;
+            transform: translateY(-21px);
+        }
+    }
+}

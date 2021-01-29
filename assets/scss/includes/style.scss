@@ -9,3 +9,54 @@ body {
   width: 100%;
   grid-template-columns: 1fr;
 }
+.container {
+  max-width: 1160px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 56px;
+  display: flex;
+  margin: 0 auto;
+  &-title {
+    font-size: 30px;
+    line-height: 35px;
+    color: $black;
+    font-weight: bold;
+    &_white {
+      color: $white;
+    }
+  }
+  &_column {
+    flex-direction: column;
+  }
+  &_small {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &_revers {
+    flex-direction: row-reverse;
+  }
+}
+.switcher {
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  &__arrow {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  &__circle {
+    &_middle {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &_active {
+      
+    }
+  }
+}
+.option {
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,47 +1,10 @@
 .header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     &__logo {
-        background-image: url('/build/images/logo.png');
-        width: 130px;
-        height: 30px;
-        background-size: contain;
-        background-repeat: no-repeat;
         margin: 27px 50px;
     }
-    &__menu {
-        display: flex;
-        align-items: center;
-        padding: 0;   
-    }
-    &__nav {
-        display: flex;   
-    }
-    &__item {
-        margin-right: 30px;
-    }
-    &__item a{
-        color: $wetasphalt;
-        font-family: 'Bio-sans-regular'; 
-        margin-right: 6px;
-    }
-    &__item_arrow {
-        display: flex;
-
-        margin-right: 36px;
-    }
-    &__item_arrow:after {
-        content:  url('/build/images/nav-arrow.png');
-        width: 8px;
-        height: 4px;
-        background-size: contain;
-        cursor: pointer;
-    }
-    &__button {
-        padding: 30px;
-        background-color: $brand-primary;
-        font-weight: bold;
-        font-family: 'Bio-sans-regular';
+    svg {
+        vertical-align: middle;
     }
 }

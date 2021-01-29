@@ -57,6 +57,10 @@ module.exports = {
           from: './assets/images',
           to: './images'
       },
+        {
+          from: './assets/fonts',
+          to: './fonts'
+      },
         { 
           from: './assets/data/browserconfig.xml',
           to: "browserconfig.xml"

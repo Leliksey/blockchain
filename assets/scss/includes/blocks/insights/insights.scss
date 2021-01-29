@@ -1,0 +1,9 @@
+.insights {
+    &__group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 55px;
+        padding-top: 50px;
+        align-items: flex-start;
+    }
+}
