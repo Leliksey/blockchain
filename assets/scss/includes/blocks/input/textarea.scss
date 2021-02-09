@@ -1,5 +1,10 @@
 .textarea {
+    @extend .form__input;
     @extend .input;
     min-height: 100px;
     height: 100%;
+    @include max-sm {
+        min-height: 90px;
+        height: 100%;
+    }
 }

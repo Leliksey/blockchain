@@ -2,26 +2,44 @@
     position: relative;
     width: 100%;
     line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &_row {
         position: relative;
     }
+
     &__background {
         filter: brightness(0.3);
-        max-height: 450px;
         height: 100%;
+        position: absolute;
+        object-fit: cover;
+
         &_row {
             position: absolute;
             object-fit: cover;
         }
     }
+
     &__content {
-        max-width: px2rem(800px);
-        width: 100%;
-        position: absolute;
-        top: 105px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
+        z-index: 5;
+        padding: 105px 0 120px;
+
+        @include max-sm {
+            padding: 30px 0 30px;
+        }
+
+        &-wrapper {
+            max-width: px2rem(800px);
+            text-align: center;
+            margin: 0 auto;
+
+            @include max-sm {
+                max-width: 320px;
+            }
+        }
+
         &_row {
             position: relative;
             display: flex;
@@ -29,38 +47,75 @@
             text-align: left;
             top: 0;
             padding: 100px 0;
+            @include max-sm {
+                flex-wrap: wrap;
+                text-align: center;
+                padding: 20px 0;
+            }
         }
     }
+
     &__title {
         color: $white;
         font-size: 50px;
         line-height: 60px;
         font-weight: bold;
+
+        @include max-sm {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
         &_small {
             font-size: 30px;
             line-height: 35px;
-        } 
+            @include max-sm {
+                font-size: 25px;
+            }
+        }
     }
+
     &__description {
         width: 482px;
         font-size: 18px;
         line-height: 30px;
         color: $white;
         margin: 20px auto 40px;
+
+        @include max-sm {
+            width: 313px;
+            font-size: 14px;
+            line-height: 22px;
+            margin: 20px auto 20px;
+        }
+
         &_small {
             font-size: 16px;
             line-height: 25px;
             width: 500px;
             margin: 10px 0;
+            @include max-sm {
+                width: auto;
+            }
         }
     }
+
     &__button {
         font-size: 20px;
         line-height: 20px;
         padding: 15px 19px;
-        height: 100%;
-        &_margin{
+
+        // height: 100%;
+        @include max-sm {
+            font-size: 12px;
+            line-height: 4px;
+        }
+
+        &_margin {
             margin-left: 50px;
+            @include max-sm {
+                margin: 10px 0 0;
+            }
         }
     }
 }

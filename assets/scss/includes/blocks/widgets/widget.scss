@@ -1,0 +1,86 @@
+.widget {
+    &_mob-hide {
+        @include max-sm {
+            display: none;
+        }
+    }
+
+    &__outer {
+        @include max-sm {
+            margin: 0;
+            border-top: 1px solid #D8D8D8;
+            // padding: 20px;
+            // margin-right: -17px;
+
+        }
+
+        // &[open] {
+        //     .widget__content {
+        //         display: none;
+        //     }
+        // }
+    }
+
+    &__outer+&__outer {
+        margin-top: 10px;
+
+        @include max-sm {
+            margin: 0;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        color: $black;
+        margin-bottom: 10px;
+
+        @include max-sm {
+            line-height: 30px;
+            outline: none;
+            margin-bottom: 0;
+            padding: 20px;
+        }
+    }
+    &__policy-text {
+        font-size: 14px;
+        line-height: 25px;
+        color: $black;
+        padding: 20px;
+    }
+    &__content {
+        padding: 0 0 20px;
+        @include max-sm {
+            padding: 0 20px 20px;
+        }
+    }
+
+    &-menu {
+        &__link {
+            font-size: 16px;
+            line-height: 30px;
+            color: $wetasphalt;
+        }
+
+        &__item+&__item {
+            margin-top: 10px;
+        }
+    }
+
+    &__social {
+        margin: 0 0 30px;
+    }
+    &__input {
+        border: 1px solid $gainsboro;
+    }
+    &__button {
+        padding: 10px;
+        margin-top: 30px;
+        background-color: $white;
+        // rgb(246,190,0,0.5)
+        font-weight: bold;
+        border: 2px solid $brand-primary;
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+.footer {
+    border-top: 1px solid $gainsboro;
+    &__outher {
+        margin-top: 100px;
+        @include max-sm {
+            margin-top: 0;
+        }
+    }
+    &__mark {
+        width: 100%;
+        background: #333333;
+        text-align: center;
+        padding: 15px;
+        color: $white;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

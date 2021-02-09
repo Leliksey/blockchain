@@ -1,10 +1,6 @@
 .contacts {
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 145px;
-    padding-left: 50px;
     &__background {
         position: absolute;
         width: 100%;
@@ -16,14 +12,86 @@
         display: flex;
         flex-direction: column;
         z-index: 10;
+        max-width: 660px;
+        width: 100%;
     }
     &__form {
         display: flex;
         flex-direction: column;
     }
+    &__capcha {
+        // max-width: 303px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__button {
+        padding: 15px;
+        margin-top: 30px;
+        background-color: rgb(246,190,0,1);
+        // rgb(246,190,0,0.5)
+        font-weight: bold;
+        @include max-sm {
+            margin-top: 10px;
+        }
+    }
+    &__button[disabled] {
+        color: $black;
+        background-color: rgb(246,190,0,0.7);
+        cursor: initial;
+    }
     &__right {
         display: flex;
         flex-direction: column;
-        z-index: 10; 
+        z-index: 10;
+        color: $white;
+        max-width: 355px;
+        width: 100%;
+        @extend .form__input;
+        &-title-wrapper {
+            display: flex;
+            font-size: 25px;
+            line-height: 30px;
+            position: relative;
+            & + .contacts__right-address {
+                margin-top: 10px;
+            }
+        }
+        &-title {
+            @include max-sm {
+                font-size: 20px;
+                margin-left: 10px;
+            }
+        }
+        &-address {
+            font-size: 20px;
+            line-height: 30px;
+            @include max-sm {
+                font-size: 17px;
+                line-height: 24px;
+            }
+            &_margin {
+                margin-top: 5px;
+            }
+        }
+        &-address_gold {
+            margin-top: 5px;
+            color: $brand-primary;
+            @include max-sm {
+                margin-top: 0;
+            }
+        }
+    }
+    &__mail {
+        margin-top: 20px;
+        @include max-sm {
+            margin-top: 10px;
+        }
+    }
+    &__location {
+        position: absolute;
+        left: -30px;
+        @include max-sm {
+            position: initial;
+        }
     }
 }

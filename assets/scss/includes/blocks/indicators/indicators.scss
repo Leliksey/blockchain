@@ -1,4 +1,6 @@
 .indicators {
     width: 100%;
     background-color: $lynx-white;
+    display: flex;
+    flex-direction: column;
 }

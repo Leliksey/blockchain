@@ -1,5 +1,8 @@
 .nav {
     display: flex;
+    @include max-sm {
+        display: none;
+    }
     &__menu {
         display: flex;
         align-items: center;

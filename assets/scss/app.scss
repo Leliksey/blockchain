@@ -1,8 +1,10 @@
 @import './includes/variables.scss';
 @import './includes/resetStyle.scss';
+@import './includes/mixins.scss';
 @import './includes/style.scss';
 @import './includes/functions.scss';
 @import './includes/fonts.scss';
+
 
 @import './includes/blocks/header/header.scss';
 @import './includes/blocks/header/nav.scss';
@@ -21,3 +23,9 @@
 @import './includes/blocks/input/inputs.scss';
 @import './includes/blocks/input/textarea.scss';
 @import './includes/blocks/input/checkbox.scss';
+@import './includes/blocks/input/form.scss';
+@import './includes/blocks/footer/footer.scss';
+@import './includes/blocks/widgets/widgets.scss';
+@import './includes/blocks/widgets/widget.scss';
+@import './includes/blocks/social/social.scss';
+@import './includes/blocks/burger/burger.scss';

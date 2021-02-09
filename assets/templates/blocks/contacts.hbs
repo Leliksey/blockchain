@@ -1,46 +1,76 @@
 <div class="contacts">
     <img class="contacts__background" src="images/bg2.jpg" alt="background">
-    <div class="container">
-        <div class="contacts__left">
-            <div class="container-title container-title_white">Book Crystal demo now</div>
-            <form class="contacts__form" action="">
+    <div class="container container_contacts">
+        <div class="container-title container-title_white">Book Crystal demo now</div>
+        <div class="contacts__left">       
+            <form class="form contacts__form" action="">
                 <div class="inputs-group">
-                    <input class="input inputs-group__input" type="text" placeholder="First name">
-                    <input class="input inputs-group__input" type="text" placeholder="Last name">
+                    <input class="input form__input" type="text" placeholder="First name">
+                    <input class="input form__input" type="text" placeholder="Last name">
                 </div>
-                <input class="input" type="text" placeholder="Company name">
-                <input class="input" type="text" placeholder="Corporate email (also used for login later)">
+                <input class="input form__input" type="text" placeholder="Company name">
+                <input class="input form__input" type="text" placeholder="Corporate email (also used for login later)">
                 <div class="inputs-group">
-                    <select class="input inputs-group__select">
+                    <select class="input inputs-group__country form__input">
                         <option class="option" selected value="United States">United States</option>
                         <option class="option" value="Ukraine">Ukraine</option>
                     </select>
                     <div class="inputs-flex">
-                            <select class="input input_code">
+                            <select class="input input_code form__input">
                                 <option selected value="+1">+1</option>
                                 <option value="+38">+38</option>
                             </select>
                             <svg class="inputs-flex__arrow" width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L4 4L0 0L8 0Z" fill="#666666"/>
                             </svg>
-                        <input class="input input_radius inputs-group__input" type="text">          
+                        <input class="input input_radius form__input" type="text">          
                     </div>
                 </div>
                 <textarea class="textarea" placeholder="Describe your need for Crystal"></textarea>
                 <div class="checkbox">
-                    <label for="checkbox__text">
-                        <input class="checkbox__input" type="checkbox">
+                    <input class="checkbox__input" id="checkbox-policy" type="checkbox">
+                    <label class="checkbox__label" for="checkbox-policy">
                     </label>
-                    <div class="checkbox__text" id="checkbox__text">I have read the <a href="#"> Privacy Policy</a>and agree with processing of my data provided above by the Bitfury Group according to the policy.</div>
+                    <label for="checkbox-policy">
+                    <span class="checkbox__text">I have read the <a class="privacy-ref" href="#"> Privacy Policy </a>and agree with processing of my data provided above by the Bitfury Group according to the policy.</span>
+                    </label>
                 </div>
                 <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox">
-                    <div class="checkbox__text">I want to receive regular news from Crystal</div>
+                     <input class="checkbox__input" id="checkbox-subscribe" type="checkbox">
+                    <label class="checkbox__label" for="checkbox-subscribe">
+                    </label>
+                    <label for="checkbox-subscribe">
+                        <span class="checkbox__text" id="checkbox-subscribe">I want to receive regular news from Crystal</span>
+                    </label>
                 </div>
+                <div class="contacts__capcha">
+                    <img src="images/capcha.jpg" alt="capcha">
+                </div>
+                <button class="button contacts__button" disabled>Send Request</button>
             </form>
         </div>
         <div class="contacts__right">
-
+                <div class="contacts__right-title-wrapper">
+                    <svg class="contacts__location" width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3513 0.810791C17.1236 0.810791 21.8031 5.49022 21.8031 11.2626C21.8031 13.572 21.0382 15.8163 19.628 17.6451L11.3513 28.3784L3.07448 17.6451C-0.450428 13.0739 0.39767 6.51079 4.96879 2.98586C6.71443 1.63973 8.83872 0.881655 11.0368 0.81552L11.3513 0.810791ZM11.3513 5.67566C8.66446 5.67566 6.48639 7.85373 6.48639 10.5405C6.48639 13.2273 8.66446 15.4054 11.3513 15.4054C14.038 15.4054 16.2161 13.2273 16.2161 10.5405C16.2161 7.85373 14.038 5.67566 11.3513 5.67566Z" fill="#F6BE00" stroke="#F6BE00" stroke-width="1.5"/>
+                    </svg>
+                   <div class="contacts__right-title">Crystal Blockchain</div>
+                </div>
+                <div class="contacts__right-address">Strawinskylaan 3051</div>
+                <div class="contacts__right-address">1077 ZX Amsterdam</div>
+                <div class="contacts__right-address">The Netherlands</div>
+                <div class="contacts__mail">
+                    <div class="contacts__right-address_margin">General enquiries</div>
+                    <div class="contacts__right-address_gold"><a href="mailto:contact@crystalblockchain.com"> contact@crystalblockchain.com</a></div>
+                </div>
+                <div class="contacts__mail">
+                    <div class="contacts__right-address">For financial companies</div>
+                    <div class="contacts__right-address_gold"><a href="mailto:enterprise@crystalblockchain.com"> enterprise@crystalblockchain.com</a></div>
+                </div>
+                <div class="contacts__mail">
+                    <div class="contacts__right-address">For law enforcement organizations</div>
+                    <div class="contacts__right-address_gold"><a href="mailto:le@crystalblockchain.com"> le@crystalblockchain.com</a></div>
+                </div>
         </div>
     </div>
 </div>

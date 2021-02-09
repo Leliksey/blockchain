@@ -1,12 +1,11 @@
 .inputs {
     &-group {
-        max-width: 660px; 
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
-        &__input {
-            border: 1px solid $gainsboro;
+        @include max-sm {
+            grid-template-columns: 1fr;
         }
     }
     &-flex {
@@ -19,8 +18,11 @@
         &__arrow {
             position: absolute;
             bottom: 0;
-            left: 80px;
+            left: 95px;
             transform: translateY(-21px);
+            @include max-sm {
+                transform: translateY(-17px);  
+            }
         }
     }
 }

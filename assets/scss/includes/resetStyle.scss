@@ -53,6 +53,7 @@ a {
   background-color: $brand-primary;
   font-weight: bold;
   border-radius: 5px;
+  
 }
 .button_large {
     padding: 30px;
@@ -60,9 +61,15 @@ a {
 }
 .button_arris {
     border-radius: 0;
+     
 }
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+details {
+  
+
+}
+summary {
+  display: block;
+}
+::-webkit-details-marker {
+  display: none;
 }

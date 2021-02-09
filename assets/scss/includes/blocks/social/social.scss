@@ -1,0 +1,17 @@
+.social {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 15px;
+    }
+    &__link {
+        width: 30px;
+        height: 30px;
+        background: #ECEDF0;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

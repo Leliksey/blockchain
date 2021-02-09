@@ -16,11 +16,22 @@ body {
   padding-bottom: 56px;
   display: flex;
   margin: 0 auto;
+  @include max-sm {
+    max-width: 358px;
+    width: 100%;
+    padding: 25px 10px ;
+  }
   &-title {
     font-size: 30px;
     line-height: 35px;
     color: $black;
     font-weight: bold;
+    grid-column: 1/3;
+    @include max-sm {
+      font-size: 20px;
+      line-height: 25px;
+      margin-top: 10px;
+    }
     &_white {
       color: $white;
     }
@@ -28,20 +39,51 @@ body {
   &_column {
     flex-direction: column;
   }
+  &_mobile-column {
+    @include max-sm {
+      flex-direction: column;
+    }
+  }
   &_small {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-around;
+    @include max-sm {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      flex-direction: column;
+    }
   }
   &_revers {
     flex-direction: row-reverse;
+    @include max-sm {
+      flex-direction: column-reverse;
+    }
+  }
+  &_contacts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 145px;
+    position: relative;
+    z-index: 10;
+    @include max-sm {
+      display: block;
+    }
+
+    .container-title{
+      grid-column: 1/3;
+    }
   }
 }
 .switcher {
   text-align: center;
   padding-top: 56px;
   padding-bottom: 56px;
+  @include max-sm {
+    display: none;
+  }
   &__arrow {
     margin-left: 18px;
     margin-right: 18px;
@@ -51,12 +93,16 @@ body {
       margin-left: 10px;
       margin-right: 10px;
     }
-    &_active {
-      
-    }
   }
 }
 .option {
   font-size: 16px;
   line-height: 20px;
+}
+.privacy-ref {
+  @extend .post__ref;
+    &_gray {
+      color: $wetasphalt;
+      border-bottom: 2px solid $brand-primary;
+    }
 }

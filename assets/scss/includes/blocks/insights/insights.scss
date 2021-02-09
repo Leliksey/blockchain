@@ -1,9 +1,18 @@
 .insights {
+    &__insight {
+        @include max-sm {
+            margin-top: 30px;
+        }
+    }
     &__group {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 55px;
         padding-top: 50px;
         align-items: flex-start;
+        @include max-sm {
+            display: block;
+            padding-top: 0;
+        }
     }
 }

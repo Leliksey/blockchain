@@ -1,13 +1,31 @@
 .logos {
+    &__link {
+        display: block;
+    }
+    &__logo {
+        width: 100%;
+    }
     &-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         padding-top: 30px;
         align-items: center;
         margin: 0 auto;
+        @include max-sm {
+            padding: 10px;
+        }
         &__logo {
             padding: 30px 68px;
+            @include max-sm {
+                padding: 10px 10px;
+            }
         }
+        // &__logo svg {
+        //     @include max-sm {
+        //         width: 100%;
+        //     }
+           
+        // }
     }
 }
