@@ -1,18 +1,48 @@
 .info {
     background-color: $lynx-white;
     width: 100%;
-    & + & {
+    &_revers .container {
+        .info__text {
+            padding-right: 0;
+            margin: -12px 0;
+            .info__post {
+                .info__title{
+                    line-height: 40px;
+                }
+                .info__description{
+                    line-height: 24px;
+                    padding-top: 7px;
+                }
+            }
+        } 
+        .info__picture {
+            padding-right: 50px;
+            margin: -8px 0;
+            @include max-md {
+                margin: 0 auto 30px;
+            }
+            @include max-sm {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &+& {
         background-color: $white;
         width: 100%;
     }
+
     &__text {
         flex-direction: column;
-        padding-right: 50px;
-        @include max-sm {
+        padding-right: 30px;
+
+        @include max-lg {
             padding-right: 0;
-            margin-top: 10px;
+            margin: 20px 0 20px;
         }
-            &_row {
+
+        &_row {
             @include max-sm {
                 display: flex;
                 flex-direction: column;
@@ -21,30 +51,37 @@
             }
         }
     }
+
     &__post {
         text-align: left;
     }
-    &__post + &__post {
-        margin-top: 50px;
+
+    &__post+&__post {
+        margin-top: 55px;
+
         @include max-sm {
             margin-top: 10px;
         }
     }
+
     &__title {
         font-size: 25px;
-        line-height: 35px;
+        line-height: 31px;
         font-weight: bold;
         color: $black;
+
         @include max-sm {
             font-size: 20px;
             line-height: 25px;
         }
     }
+
     &__description {
         font-size: 16px;
         line-height: 25px;
         color: $black;
-        padding-top: 10px;
+        padding-top: 14px;
+
         @include max-sm {
             font-size: 14px;
             line-height: 17px;
@@ -52,12 +89,19 @@
 
         }
     }
+
     &__picture {
-        padding-right: 50px;
+        margin: 7px 0;
+
         @include max-sm {
             padding: 0;
+            width: 100%;
+        }
+        @include max-lg {
+            margin: 0 auto;
         }
     }
+
     &__svg {
         @include max-sm {
             width: 100%;
@@ -65,5 +109,3 @@
         }
     }
 }
-
-

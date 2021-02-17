@@ -4,13 +4,17 @@
     @include max-sm {
         max-height: 60px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+        background: white;
     }
 
     &__logo {
-        margin: 27px 50px;
+        margin: 25px 50px;
 
         @include max-sm {
-            margin: 17px 20px 21px;
+            margin: 15px 20px 21px;
         }
     }
 

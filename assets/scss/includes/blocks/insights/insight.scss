@@ -42,8 +42,12 @@
         width: 100%;
         height: 100%;
     }
-    // &__ref {
-    //     @extend .post__ref;
-    //     margin-top: 10px;
-    // }
+    &__ref {
+        color: $brand-primary;
+        // @extend .post__ref;
+        // margin-top: 10px;
+    }
+    &__more {
+        margin-top: 10px;
+    }
 }

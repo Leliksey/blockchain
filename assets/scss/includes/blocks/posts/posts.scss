@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 55px;
-        padding-top: 50px;
+        margin-top: 54px;
         align-items: flex-start;
         @include max-sm {
             display: block;

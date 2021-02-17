@@ -1,4 +1,7 @@
 .logos {
+    @include xxl {
+        max-height: 350px;
+    }
     &__link {
         display: block;
     }
@@ -12,11 +15,18 @@
         padding-top: 30px;
         align-items: center;
         margin: 0 auto;
+        @include xxl {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 95px;
+            padding: 55px 0;
+        }
         @include max-sm {
             padding: 10px;
         }
         &__logo {
-            padding: 30px 68px;
+            // padding: 37px 64px 0;
             @include max-sm {
                 padding: 10px 10px;
             }

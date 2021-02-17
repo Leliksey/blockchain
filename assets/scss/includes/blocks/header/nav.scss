@@ -1,10 +1,29 @@
 .nav {
     display: flex;
     @include max-sm {
-        display: none;
+        display: block;
     }
     &__menu {
         display: flex;
         align-items: center;
+        transition: transform .5s ease-in-out;
+        @include max-sm {
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            position: absolute;
+            background-color: $white;
+            top: 59px;
+            left: 0;
+            width: 70%;
+            padding: 15px 0 0;
+            transform: translateX(-100%);
+            border-right: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+
+            .body_menu-open & {
+                transform: translateX(0);
+            }
+        }
     }
 }

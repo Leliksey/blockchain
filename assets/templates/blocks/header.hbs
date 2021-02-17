@@ -11,34 +11,65 @@
         </svg>
     </div>
             <div class="nav header__nav">
-        <ul class="menu nav__menu">
-            <li class="menu__item"><a class="menu__link" href="#">Products</a></li>
+        <ul class="menu nav__menu nav__menu_hide" id="menu">
+            <li class="menu__item">
+                <a class="menu__link" href="#">Products <svg class="menu__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5.35355 4.64645C5.15829 4.84171 4.84171 4.84171 4.64645 4.64645L1 1" stroke="#666666" stroke-linecap="round"/></svg></a>
+                <div class="menu__dropdown">
+                    <a class="menu__link" href="#">Expert, Pro, API</a>
+                </div>
+            </li>
             <li class="menu__item"><a class="menu__link" href="#">Customers
                 <svg class="menu__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 1L5.35355 4.64645C5.15829 4.84171 4.84171 4.84171 4.64645 4.64645L1 1" stroke="#666666" stroke-linecap="round"/>
                 </svg></a>
+                <div class="menu__dropdown">
+                    <a class="menu__link" href="#">Government Agencies</a>
+                    <a class="menu__link" href="#">Banks & Financial Institutions</a>
+                    <a class="menu__link" href="#">Crypto Exchanges & Businessesv</a>
+                </div>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#">Solutions <svg class="menu__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 1L5.35355 4.64645C5.15829 4.84171 4.84171 4.84171 4.64645 4.64645L1 1" stroke="#666666" stroke-linecap="round"/>
                 </svg></a>
+                <div class="menu__dropdown">
+                    <a class="menu__link" href="#">5 AMLD Regulation</a>
+                </div>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#">Insights <svg class="menu__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 1L5.35355 4.64645C5.15829 4.84171 4.84171 4.84171 4.64645 4.64645L1 1" stroke="#666666" stroke-linecap="round"/>
                 </svg></a>
+                <div class="menu__dropdown">
+                    <a class="menu__link" href="#">Bitcoin Flow Map</a>
+                    <a class="menu__link" href="#">Investigations</a>
+                </div>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Blog</a></li>
+                <a class="menu__link" href="#">Blog <svg class="menu__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5.35355 4.64645C5.15829 4.84171 4.84171 4.84171 4.64645 4.64645L1 1" stroke="#666666" stroke-linecap="round"/></svg></a>
+                <div class="menu__dropdown">
+                    <a class="menu__link" href="#">All News</a>
+                    <a class="menu__link" href="#">Product Updates</a>
+                    <a class="menu__link" href="#">Articles</a>
+                    <a class="menu__link" href="#">Investigations</a>
+                    <a class="menu__link" href="#">Use Cases</a>
+                </div>
+                </li>
             <li class="menu__item">
                 <a class="menu__link" href="#">Company <svg class="menu__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 1L5.35355 4.64645C5.15829 4.84171 4.84171 4.84171 4.64645 4.64645L1 1" stroke="#666666" stroke-linecap="round"/></svg>
                 </a>
+                <div class="menu__dropdown">
+                    <a class="menu__link" href="#">Partners</a>
+                    <a class="menu__link" href="#">About Us</a>
+                </div>
             </li>
         </ul>
         <button class="button button_large button_arris" type="button">GET CRYSTAL</button>
     </div>
-    <button class="burger" type="button">
+    <button class="burger" type="button" id="burger">
         <span></span>
         <span></span>
         <span></span>

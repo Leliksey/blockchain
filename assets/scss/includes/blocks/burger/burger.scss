@@ -5,9 +5,25 @@
     position: relative;
     background-color: $white;
     outline: none;
-    
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (orientation: landscape) {
+        display: none;
+    }
+
+    @include md {
+        display: none;
+    }
+
+    @include lg {
+        display: none;
+    }
 
     span {
+        pointer-events: none;
         width: 18px;
         height: 2px;
         display: block;
@@ -17,6 +33,7 @@
         transform: translateX(-50%);
         left: 50%;
         top: 4px;
+        transition: all .5s ease-in-out;
 
         +span {
             top: 9px;
@@ -25,14 +42,26 @@
                 top: 1.02em;
             }
         }
+
+        .body_menu-open & {
+            top: 9px;
+            left: 0;
+            transform: rotate(45deg);
+
+            +span {
+                transform: scale(0);
+
+                +span {
+                    top: 9px;
+                    left: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
     }
 
-    @include lg {
-        display: none;
-    }
 
-    &:hover {
-        cursor: pointer;
-    }
+
+
 
 }

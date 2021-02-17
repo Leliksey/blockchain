@@ -26,7 +26,7 @@
     }
     &__button {
         padding: 15px;
-        margin-top: 30px;
+        margin-top: 21px;
         background-color: rgb(246,190,0,1);
         // rgb(246,190,0,0.5)
         font-weight: bold;
@@ -65,16 +65,17 @@
         &-address {
             font-size: 20px;
             line-height: 30px;
+            margin-top: -1px;
             @include max-sm {
                 font-size: 17px;
                 line-height: 24px;
             }
             &_margin {
-                margin-top: 5px;
+                // margin-top: 5px;
             }
         }
         &-address_gold {
-            margin-top: 5px;
+            margin-top: 7px;
             color: $brand-primary;
             @include max-sm {
                 margin-top: 0;
@@ -82,14 +83,15 @@
         }
     }
     &__mail {
-        margin-top: 20px;
+        margin-top: 25px;
         @include max-sm {
             margin-top: 10px;
         }
     }
     &__location {
         position: absolute;
-        left: -30px;
+        left: -33px;
+        top: 4px;
         @include max-sm {
             position: initial;
         }

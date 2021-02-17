@@ -1,6 +1,7 @@
 .checkbox {
     display: flex;
     margin-top: 15px;
+    align-items: center;
     &__input[type="checkbox"] {
         opacity: 0;
         position: absolute;
@@ -8,7 +9,13 @@
     &__label {
         position: relative;
         display: inline-block;
-        padding-left: 22px;
+        padding-right: 25px;
+        &_margin {
+            margin-top: 3px;
+            &-top {
+                margin-top: -12px;
+            }
+        }
         
         &::after,
         &::before {
@@ -21,8 +28,8 @@
             height: 14px;
             width: 14px;
             border: 1px solid #666;
-            left: 0px;
-            top: 6px;
+            left: 3px;
+            top: -13px;
             background-color: $white;
             border-radius: 1px;
         }
@@ -36,6 +43,12 @@
             top: 10px;
             color: $black;
         }
+    }
+    &-policy {
+        margin-top: 4px;
+    }
+    &-subscribe {
+        margin-top: -11px;
     }
     &__input[type="checkbox"] + &__label::after {
         content: none;

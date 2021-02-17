@@ -1,12 +1,53 @@
 .menu {
     &__item { 
-        margin-right: 30px;
+        margin-right: 34px;
+        position: relative;
+        @include max-sm {
+            border-bottom: 2px solid $gainsboro;
+            width: 100%;
+            margin-top: 0;
+            margin-left: 30px;
+            padding-left: 20px;
+            + .menu__item {
+                margin-top: 30px; 
+            }
+        }   
+    }
+    // &__item:hover {
+    //     .menu-content {
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+    // }
+    &__dropdown {
+        display: none;
+        position: absolute;
+        min-width: max-content;
+        margin-top: 5px;
+        background-color: white;
+        z-index: 10;
+        padding: 5px 20px 15px;
+        border-radius: 5px;
+        &_show {
+            display: block;
+        }
+        .menu__link {
+            margin-top: 20px;
+            color: $wetasphalt;
+            font-size: 14px;
+            color: gray;
+        }
     }
     &__link {
         color: $wetasphalt;
         font-size: 15px;
         display: flex;
         align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include max-sm {
+            font-size: 20px;
+        }
     }
     &__arrow {
         margin-left: 6px;

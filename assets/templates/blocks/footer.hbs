@@ -1,11 +1,10 @@
 <div class="footer footer__outher">
     <div class="container">
         <div class="widgets">
-
             <div class="widgets__group widgets__group_hide">
                 <div class="widget widget__outer">
-                    <div class="widget__title">Follow us</div>
-                    <div class="widget__content">
+                    <div class="widget__title widget__title_mobile">Follow us</div>
+                    <div class="widget__content widget__content_mobile">
                         <div class="social widget__social">
                             <ul class="social__list">
                                 <li class="social__item">
@@ -42,11 +41,14 @@
                         </div>
                     </div>
                 </div>
-                 <div class="widget">
-                    <div class="widget__title">Be the first to know news from Crystal</div>
-                    <div class="widget__policy-text">By clicking Subscribe you agree to our <a class="privacy-ref_gray" href="#"> Privacy Policy </a></div>
-                    <input class="input widget__input" type="text">
-                    <button class="button widget__button" type="button">Subscribe</button>
+                <div class="widget">
+                    <div class="widget__title widget__title">Be the first to know news from Crystal</div>
+                    <div class="widget__policy-text">By clicking Subscribe you agree to our<a class="privacy-ref_gray"
+                            href="#"> Privacy Policy </a></div>
+                    <form class="widget-form" action="">
+                        <input class="input widget-form__input" type="text">
+                        <button class="button widget-form__button" type="button">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="widgets__group">
@@ -63,7 +65,7 @@
                         </ul>
                     </div>
                 </details>
-                <details class="widget widget__outer" open>
+                <details class="widget widget__outer widget_mob-hide" open>
                     <summary class="widget__title">Blog</summary>
                     <div class="widget__content">
                         <ul class="widget-menu">
@@ -97,7 +99,7 @@
                         </ul>
                     </div>
                 </details>
-                <details class="widget widget__outer" open>
+                <details class="widget widget__outer widget_mob-hide" open>
                     <summary class="widget__title">Insights</summary>
                     <div class="widget__content">
                         <ul class="widget-menu">
@@ -129,8 +131,51 @@
                     </div>
                 </details>
             </div>
+
+            <div class="widgets__group widgets__group_hide">
+                <details class="widget widget__outer " open>
+                    <summary class="widget__title">Licenses</summary>
+                </details>
+                 <details class="widget widget__outer" open>
+                    <summary class="widget__title">Blog</summary>
+                    <div class="widget__content">
+                        <ul class="widget-menu">
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">All News</a>
+                            </li>
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">Product Updates</a>
+                            </li>
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">Articles</a>
+                            </li>
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">Investigations</a>
+                            </li>
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">Use Cases</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+            <div class="widgets__group widgets__group_hide">
+            <details class="widget widget__outer" open>
+                    <summary class="widget__title">Insights</summary>
+                    <div class="widget__content">
+                        <ul class="widget-menu">
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">Bitcoin Flow Map</a>
+                            </li>
+                            <li class="widget-menu__item">
+                                <a class="widget-menu__link" href="#">Investigations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+                </div>
             <div class="widgets__group">
-                <details class="widget widget__outer" open>
+                <details class="widget widget__outer widget_mob-hide" open>
                     <summary class="widget__title">Products</summary>
                     <div class="widget__content">
                         <ul class="widget-menu">
@@ -155,9 +200,9 @@
                 </details>
             </div>
             <div class="widgets__group">
-                <details class="widget widget__outer widget_mob-hide" open>
-                    <summary class="widget__title">Follow us</summary>
-                    <div class="widget__content">
+                <div class="widget widget__outer widget_mob-hide">
+                    <div class="widget__title">Follow us</div>
+                    <div class="widget__content widget__content_mobile">
                         <div class="social widget__social">
                             <ul class="social__list">
                                 <li class="social__item">
@@ -193,7 +238,7 @@
                             </ul>
                         </div>
                     </div>
-                </details>
+                </div>
                 <details class="widget widget__outer" open>
                     <summary class="widget__title">Contact us</summary>
                     <div class="widget__content">

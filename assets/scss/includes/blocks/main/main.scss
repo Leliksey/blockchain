@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include max-sm {
+        margin-top: 60px;
+    }
 
     &_row {
         position: relative;
@@ -46,7 +49,8 @@
             justify-content: center;
             text-align: left;
             top: 0;
-            padding: 100px 0;
+            align-items: center;
+            max-height: 270px;
             @include max-sm {
                 flex-wrap: wrap;
                 text-align: center;
@@ -60,7 +64,7 @@
         font-size: 50px;
         line-height: 60px;
         font-weight: bold;
-
+        max-width: 800px;
         @include max-sm {
             font-size: 17px;
             line-height: 25px;
@@ -68,7 +72,8 @@
 
         &_small {
             font-size: 30px;
-            line-height: 35px;
+            line-height: 20px;
+            margin-top: 46px;
             @include max-sm {
                 font-size: 25px;
             }
@@ -93,7 +98,7 @@
             font-size: 16px;
             line-height: 25px;
             width: 500px;
-            margin: 10px 0;
+            margin: 18px 0;
             @include max-sm {
                 width: auto;
             }
@@ -102,10 +107,10 @@
 
     &__button {
         font-size: 20px;
-        line-height: 20px;
+        line-height: 22px;
         padding: 15px 19px;
 
-        // height: 100%;
+        height: 100%;
         @include max-sm {
             font-size: 12px;
             line-height: 4px;
@@ -113,6 +118,7 @@
 
         &_margin {
             margin-left: 50px;
+            margin-top: 20px;
             @include max-sm {
                 margin: 10px 0 0;
             }
