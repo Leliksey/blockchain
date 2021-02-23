@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 70px;
-    margin-left: 10px;
-    margin-right: 10px;
+    // margin-left: 10px;
+    margin-right: 16px;
     @include max-lg {
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 30px;
@@ -30,8 +30,8 @@
         }
 
         @include max-iph {
-            margin-left: -10px;
-            margin-right: -10px;
+            margin-left: -20px;
+            margin-right: -20px;
         }
 
         &_hide {
@@ -49,10 +49,12 @@
             grid-column-start: 1;
             grid-column-end: 3;
             margin-top: 20px;
+            
         }
 
         @include max-sm {
             margin-top: 0;
+            border-bottom: 1px solid #D8D8D8;
         }
 
     }

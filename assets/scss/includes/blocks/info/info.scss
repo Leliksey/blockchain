@@ -23,6 +23,7 @@
 
                 .info__title {
                     line-height: 40px;
+                    margin-top: -6px;
                 }
 
                 .info__description {
@@ -35,7 +36,8 @@
         .info__picture {
             padding-right: 50px;
             margin: -8px 0;
-
+            width: 100%;
+            // position: relative;
 
             @include max-lg {
                 padding-right: 0;
@@ -51,6 +53,11 @@
                 margin-bottom: 20px;
             }
         }
+        // .info__picture:before {
+        //     display: block;
+        //     content: "";
+        //     padding-top: 56.25%;
+        // }
     }
 
     &+& {
@@ -131,7 +138,8 @@
 
     &__picture {
         margin: 7px 0;
-
+        width: 100%;
+        // position: relative;
         @include max-sm {
             padding: 0;
             width: 100%;
@@ -141,8 +149,17 @@
             margin: 0 auto;
         }
     }
-
+    // &__picture:before {
+    //     display: block;
+    //     content: "";
+    //     padding-top: 56.25%;
+    // }
     &__svg {
+        // position: absolute;
+        // top: 0;
+        // width: 100%;
+        // height: 100%;
+        // display: block;
         @include max-sm {
             width: 100%;
             height: 100%;

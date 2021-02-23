@@ -68,6 +68,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 45px;
+    @include max-md {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      
+    }
     @include max-sm {
       padding-top: 15px;
       padding-bottom: 15px;

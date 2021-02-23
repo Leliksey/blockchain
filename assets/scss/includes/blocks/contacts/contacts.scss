@@ -22,8 +22,25 @@
     &__capcha {
         // max-width: 303px;
         width: 100%;
+        position: relative;
         margin-top: 20px;
     }
+    &__capcha:before {
+        // max-width: 303px;
+        display: block;
+        content: "";
+        padding-top: 82px;
+
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        display: block;
+        @include max-iph {
+            width: 100%;
+        }
+    }
+
     &__button {
         padding: 15px;
         margin-top: 21px;

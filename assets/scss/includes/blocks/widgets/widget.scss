@@ -24,7 +24,6 @@
 
     &__outer:last-child {
         @include max-sm {
-            border-bottom: 1px solid #D8D8D8;
         }
     }
 
