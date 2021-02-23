@@ -2,7 +2,6 @@
 window.addEventListener("resize", () => {
     
 });
-// window.addEventListener('orientationChange', orientationChange());
 
 
 window.onload = function () {

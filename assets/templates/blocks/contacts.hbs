@@ -10,12 +10,21 @@
                 </div>
                 <input class="input form__input" type="text" placeholder="Company name">
                 <input class="input form__input" type="text" placeholder="Corporate email (also used for login later)">
-                <div class="inputs-group">
-                    <select class="input inputs-group__country form__input">
-                        <option class="option" selected value="United States">United States</option>
-                        <option class="option" value="Ukraine">Ukraine</option>
-                    </select>
+                <div class="inputs-group inputs-group_select">
+                    <div class="custom-select">
+                        <select class="input inputs-group__country form__input">
+                            <option class="option" selected value="United States">United States</option>
+                            <option class="option" value="Ukraine">Ukraine</option>
+                        </select>
+                        
+                        <svg class="inputs-group__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4.64645 4.64645C4.84171 4.84171 5.15829 4.84171 5.35355 4.64645L9 1"
+                                stroke="#666666" stroke-linecap="round" />
+                        </svg>
+
+                    </div>
                     <div class="inputs-flex">
+
                         <select class="input input_code form__input">
                             <option selected value="+1">+1</option>
                             <option value="+38">+38</option>

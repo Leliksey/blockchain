@@ -3,31 +3,25 @@
         @include max-sm {
             display: none;
         }
-    &_mob-show {
-        display: none;
-        @include max-sm {
-            display: block;
+
+        &_mob-show {
+            display: none;
+
+            @include max-sm {
+                display: block;
+            }
         }
-    }
     }
 
     &__outer {
-        // pointer-events: none;
         @include max-sm {
             pointer-events: all;
             margin: 0;
             border-top: 1px solid #D8D8D8;
-            // padding: 20px;
-            // margin-right: -17px;
 
         }
-
-        // &[open] {
-        //     .widget__content {
-        //         display: none;
-        //     }
-        // }
     }
+
     &__outer:last-child {
         @include max-sm {
             border-bottom: 1px solid #D8D8D8;
@@ -50,6 +44,12 @@
         margin-bottom: 10px;
         outline: none;
         pointer-events: none;
+
+        // @include max-lg {
+        //     font-size: 18px;
+        //     line-height: 25px;
+        // }
+
         @include max-sm {
             line-height: 30px;
             outline: none;
@@ -57,21 +57,25 @@
             padding: 20px 22px 19px;
             pointer-events: initial;
         }
+
         &_mobile {
-             padding: 59px 22px 20px;
+            padding: 59px 22px 20px;
         }
     }
+
     &__policy-text {
         font-size: 14px;
         line-height: 25px;
         color: $black;
         margin: -8px 21px 8px;
     }
+
     &__content {
-        // padding: 0 0 20px;
+
         @include max-sm {
             padding: 0 13px 20px;
         }
+
         &_mobile {
             @include max-sm {
                 padding-bottom: 10px;
@@ -84,9 +88,17 @@
             font-size: 16px;
             line-height: 30px;
             color: $wetasphalt;
+
+            // @include max-lg {
+            //     font-size: 15px;
+            //     line-height: 20px;
+            // }
+
             @include max-sm {
+                font-size: 16px;
+                line-height: 30px;
                 padding: 0 10px;
-            } 
+            }
         }
 
         &__item+&__item {
@@ -96,28 +108,33 @@
 
     &__social {
         margin: 0 0 30px;
+
         @include max-sm {
             margin: 0 9px;
         }
     }
+
     &-form {
         margin: 0 auto;
-        @include max-sm{
+
+        @include max-sm {
             max-width: 335px;
         }
-        @include max-iph{
+
+        @include max-iph {
             max-width: 280px;
         }
-        
+
         &__input {
             border: 1px solid $gainsboro;
-            // padding: 20px;
+
         }
+
         &__button {
             padding: 10px;
             margin: 17px 0 29px;
             background-color: $white;
-            // rgb(246,190,0,0.5)
+
             font-weight: bold;
             border: 2px solid $brand-primary;
             width: 100%;

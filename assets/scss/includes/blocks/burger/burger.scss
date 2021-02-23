@@ -1,27 +1,35 @@
 .burger {
-    width: 20px;
-    height: 20px;
-    margin: 20px;
-    position: relative;
-    background-color: $white;
-    outline: none;
-
+    display: none;
+    @include max-lg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 30px;
+        position: relative;
+        background-color: $white;
+        outline: none;
+    }
+    @include max-sm {
+        margin: 20px;
+    }
     &:hover {
         cursor: pointer;
     }
 
     @media (orientation: landscape) {
-        display: none;
+        // display: none;
     }
 
-    @include md {
-        display: none;
-    }
+    // @include md {
+    //     display: none;
+    // }
 
-    @include lg {
-        display: none;
-    }
-
+    // @include lg {
+    //     display: none;
+    // }
+    // @include sm {
+    //     display: none;
+    // }
     span {
         pointer-events: none;
         width: 18px;

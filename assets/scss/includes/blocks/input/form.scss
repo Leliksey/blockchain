@@ -1,6 +1,10 @@
 .form {
+    @include max-lg {
+        min-width: 310px;
+    }
     &__input {
         margin-top: 20px;
+       
         @include max-sm {
             margin-top: 10px;
         }

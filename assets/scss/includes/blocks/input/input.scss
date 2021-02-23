@@ -6,15 +6,32 @@
     font-size: 16px;
     line-height: 20px;
     font-family: 'Bio-sans-regular';
-    @include max-sm {
-        padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @include max-lg {
+        font-size: 15px;
+
     }
+
+    @include max-sm {
+        padding: 15px;
+    }
+
     &::placeholder {
         font-size: 16px;
         line-height: 20px;
         color: $dark-gray;
+        @include max-lg {
+            font-size: 15px;
+        }
+        @include max-sm {
+            font-size: 15px;
+            padding: 0;
+        }
     }
-    &_code {   
+   
+    &_code {
         background-color: $gainsboro;
         border-radius: 4px 0px 0px 4px;
         max-width: 110px;
@@ -24,10 +41,13 @@
         background-position: 14px;
         padding-left: 50px;
         font-size: 16px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
+        
+        @include max-lg {
+            font-size: 14px;
+    
+        }
     }
+
     &_radius {
         border-radius: 0 4px 4px 0;
     }

@@ -47,16 +47,30 @@
         max-width: 355px;
         width: 100%;
         @extend .form__input;
+        
+        @include max-sm {
+            margin-left: 0;
+        }
         &-title-wrapper {
             display: flex;
             font-size: 25px;
             line-height: 30px;
             position: relative;
+            @media (max-width: 660px) {
+                margin-left: 33px;
+            }
+            @include max-sm {
+                margin-left: 0;
+            }
             & + .contacts__right-address {
                 margin-top: 10px;
             }
         }
         &-title {
+            @include max-lg {
+                font-size: 16px;
+                
+            }
             @include max-sm {
                 font-size: 20px;
                 margin-left: 10px;
@@ -66,6 +80,10 @@
             font-size: 20px;
             line-height: 30px;
             margin-top: -1px;
+            @include max-lg {
+                font-size: 15px;
+                line-height: 24px;
+            }
             @include max-sm {
                 font-size: 17px;
                 line-height: 24px;

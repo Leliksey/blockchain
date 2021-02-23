@@ -1,54 +1,91 @@
 .menu {
-    &__item { 
-        margin-right: 34px;
+    &__item {
+        margin-right: 30px;
         position: relative;
-        @include max-sm {
-            border-bottom: 2px solid $gainsboro;
-            width: 100%;
-            margin-top: 0;
-            margin-left: 30px;
-            padding-left: 20px;
-            + .menu__item {
-                margin-top: 30px; 
+
+        @include max-xl {
+            margin-right: 24px;
+        }
+
+        @include max-lg {
+            border-top: 1px solid #ccc;
+            margin-right: -50px;
+            margin-left: -50px;
+
+            &:last-child {
+                border-bottom: 1px solid #ccc;
             }
-        }   
+        }
+
     }
-    // &__item:hover {
-    //     .menu-content {
-    //         display: flex;
-    //         flex-direction: column;
-    //     }
-    // }
+
     &__dropdown {
         display: none;
         position: absolute;
         min-width: max-content;
-        margin-top: 5px;
+        margin-top: 0;
         background-color: white;
         z-index: 10;
         padding: 5px 20px 15px;
         border-radius: 5px;
+        border: 1px solid #ccc;
+        border-top: none;
+        border-left: none;
+
+        @include max-lg {
+            border-radius: 0 0 5px;
+        }
+
         &_show {
             display: block;
         }
+
         .menu__link {
-            margin-top: 20px;
             color: $wetasphalt;
             font-size: 14px;
             color: gray;
+            margin-top: 20px;
+
+            @include max-xl {
+                margin-top: 20px;
+            }
+            @include max-sm {
+                margin-top: 0;
+            }
         }
     }
+
     &__link {
         color: $wetasphalt;
         font-size: 15px;
+        line-height: 20px;
         display: flex;
         align-items: center;
         text-transform: uppercase;
         font-weight: bold;
-        @include max-sm {
-            font-size: 20px;
+
+        @include max-xl {
+            font-size: 15px;
+            // padding: 20px 0;
         }
+
+        @include max-lg {
+            font-size: 14px;
+            padding: 20px 50px;
+        }
+
+        @include max-sm {
+            font-size: 16px;
+            padding: 20px 20px;
+
+        }
+
+        .menu__link {
+            border: none;
+        }
+
     }
+
     &__arrow {
         margin-left: 6px;
     }

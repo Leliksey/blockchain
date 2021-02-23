@@ -1,33 +1,45 @@
 .indicator {
     max-width: 256px;
     width: 100%;
-    // padding-right: 45px;
     flex-direction: column;
     text-align: center;
+
     @include max-sm {
         width: auto;
         padding-right: 10px;
         margin: 10px auto;
     }
+
     &__data {
         font-size: 72px;
         line-height: 75px;
         color: $black;
         font-weight: bold;
-        @include max-sm {
-            font-size: 30px;
-            line-height: 30px;
+        
+        @include max-xl {
+            font-size: 50px;
+            line-height: 55px;
+        }
+
+        @include max-lg {
+            font-size: 40px;
+            line-height: 45px;
         }
     }
+
     &__description {
         font-size: 18px;
         line-height: 30px;
         color: $black;
         margin-top: 10px;
-        @include max-sm {
+
+        @include max-xl {
             font-size: 16px;
-            line-height: 16px;
-            max-width: 150px;
+            line-height: 20px;
+        }
+        @include max-lg {
+            font-size: 15px;
+            line-height: 20px;
         }
     }
 }

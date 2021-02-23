@@ -2,6 +2,12 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    @include max-lg {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
 
     @include max-sm {
         display: flex;
@@ -12,10 +18,12 @@
     &__group {
         &_mob-show {
             display: none;
+
             @include max-sm {
                 display: block;
             }
         }
+
         @include max-sm {
             margin-left: -20px;
             margin-right: -20px;
@@ -33,6 +41,20 @@
                 display: block;
             }
         }
+
+    }
+
+    .widgets__group:last-child {
+        @include max-lg {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin-top: 20px;
+        }
+
+        @include max-sm {
+            margin-top: 0;
+        }
+
     }
 
     .widgets__group:first-child .widget__outer:first-child {

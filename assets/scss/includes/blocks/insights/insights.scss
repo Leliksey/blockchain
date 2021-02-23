@@ -10,6 +10,10 @@
         column-gap: 55px;
         margin-top: 50px;
         align-items: flex-start;
+
+        @include max-lg {
+            column-gap: 20px;
+        }
         @include max-sm {
             display: block;
             padding-top: 0;

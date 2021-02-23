@@ -6,6 +6,14 @@
         column-gap: 55px;
         margin-top: 54px;
         align-items: flex-start;
+        @include max-xl {
+            column-gap: 30px;
+            margin-top: 35px;
+        }
+        @include max-lg {
+            column-gap: 20px;
+            margin-top: 25px;
+        }
         @include max-sm {
             display: block;
             padding-top: 0;

@@ -58,7 +58,10 @@ a {
 .button_large {
     padding: 0 30px;
     font-size: 16px;
-    @include max-sm {
+    @include max-xl {
+      font-size: 15px;
+    }
+    @include max-lg {
       display: none;
     }
     @include max-md {
